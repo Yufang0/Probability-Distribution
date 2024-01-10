@@ -1,12 +1,12 @@
 # y=80,z=0.5  y=90,z=1.5
 # Y~Normal(75,100)
 
-z=seq(from=-3,to=3,by=0.1)
+z=seq(from=0,to=1.2,by=0.1)
 y=dnorm(z,0,1)
-plot(z,y, type='l')
+plot(-3,y, type='l')
+polygon(c(0,z,1.2),c(0,y,0),col="pink")
 
 #p(0<=Z<=1.2)
-polygon(c(0,z,1.2),c(0,y,0),col="pink")
 pnorm(1.2, 0, 1)-pnorm(0, 0, 1)
 
 #p(-0.9<=Z<=0)
